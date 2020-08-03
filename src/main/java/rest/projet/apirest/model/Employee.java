@@ -4,8 +4,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document (collection= "employee")
-
+@Document(collection = "employee")
 public class Employee {
 
     @Id
@@ -15,7 +14,6 @@ public class Employee {
     private String domaine;
     private String email;
 
-    
 
     /**
      * @return int return the id
@@ -73,25 +71,25 @@ public class Employee {
     public void setDomaine(String domaine) {
         this.domaine = domaine;
     }
-    
+
     /**
      * @return String return the email
      */
     public String getEmail() {
-		return email;
-	}
+        return email;
+    }
 
     /**
      * @param domaine the email to set
      */
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     @Override
     public String toString() {
-        return "Employee [ id"+ id + ", nom=" + nom + ", prenom=" + prenom + ", domaine=" + domaine +", email" + email + "]";
-      }
+        return "Employee [ id" + id + ", nom=" + nom + ", prenom=" + prenom + ", domaine=" + domaine + ", email" + email + "]";
+    }
 
-	
+
 }

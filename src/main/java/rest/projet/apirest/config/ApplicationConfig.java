@@ -6,7 +6,4 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("rest.projet.apirest")
 public class ApplicationConfig {
-
-	
-	
 }
